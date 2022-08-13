@@ -12,6 +12,9 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     height: 100%;
+    @include responsive(phone) {
+        font-size: 55%;
+    }
 }
 body {
     height: 100%;

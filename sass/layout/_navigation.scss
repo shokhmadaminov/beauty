@@ -1,0 +1,32 @@
+.header-top__nav {
+    @include responsive(m-phone) {
+        width: 70%;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        @include responsive(m-phone) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+    li:not(:last-child) {
+        margin-right: 3rem;
+        @include responsive(m-phone) {
+            margin-right: 2;
+        }
+    }
+    li:nth-child(3) {
+        margin-right: 0;
+    }
+    a {
+        line-height: 1.1;
+        text-decoration: none;
+        white-space: pre;
+        color: $dark-color;
+        &:hover {
+            color: $accent;
+        }
+    }
+}

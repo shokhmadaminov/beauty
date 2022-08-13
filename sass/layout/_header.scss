@@ -1,0 +1,65 @@
+// .header {
+
+// }
+
+.header-top {
+    padding: 1.7rem 0;
+    background-color: $gray-color;
+    display: flex;
+    justify-content: center;
+    @include responsive(m-phone) {
+        padding: 1.5rem 2rem;
+    }
+}
+
+.header-main {
+    padding: 2rem 0;
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        @include responsive(middle-table) {
+            flex-wrap: wrap;
+        }
+    }
+    .site-logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 1.16;
+        color: $accent;
+        text-decoration: none;
+        text-transform: uppercase;
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            object-position: center;
+            margin-right: 2rem;
+            @include responsive(big-table) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &:hover {
+            opacity: 0.8;
+        }
+        &:active {
+            opacity: 0.6;
+        }
+        @include responsive(big-table) {
+            font-size: 2.8rem;
+        }
+    }
+    &__tel{
+        font-size: 1.6rem;
+        line-height: 1.17;
+        color: $black-color;
+        margin-right: 4rem;
+        @include responsive(big-table) {
+            margin-right: 1rem;
+        }
+    }
+}

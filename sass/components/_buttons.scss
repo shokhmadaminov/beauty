@@ -1,0 +1,29 @@
+%Buttons {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid $accent;
+    border-radius: 4rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.15;
+    padding: 1.2rem 2.6rem;
+    @include responsive(m-phone) {
+        padding: 1rem 1.8rem;
+    }
+}
+
+
+.header-main__btn {
+    @extend %Buttons;
+    color: $black-color;
+    &:hover {
+        background-color: $accent;
+        color: $white-color;
+    }
+    @include responsive(phone) {
+        order: 2;
+    }
+    @include responsive(m-phone) {
+        margin-top: 2rem;
+    }
+}
