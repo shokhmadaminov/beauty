@@ -37,3 +37,20 @@
         margin-left: 0;
     }
 }
+
+.subscribe__form {
+    input {
+        width: 225px;
+        padding: 0.9rem 1rem 0.9rem 2.5rem;
+        border: none;
+        outline: none;
+        border-radius: 3rem;
+        color: $accent;
+        &::placeholder {
+            color: #c4c4c4;
+        }
+        @include responsive(m-phone) {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.subscribe {
+    @include container;
+    margin: 10rem auto;
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 3rem;
+        list-style: none;
+        @include responsive(phone) {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        @include responsive(m-phone) {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+    li {
+        background-color: $accent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3.5rem 4.5rem 3.5rem 4rem;
+        @include responsive(phone) {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+    &__item-wrapper-one {
+        width: 100%;
+        max-width: 265px;
+        p {
+            width: 100%;
+            max-width: 231px;
+            margin-bottom: 2.5rem;
+            color: $white-color;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__item-wrapper-two {
+        width: 100%;
+        max-width: 170px;
+        p {
+            width: 100%;
+            max-width: 141px;
+            margin-bottom: 2.5rem;
+            color: $white-color;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    h3 {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.15;
+        color: $white-color;
+        margin-bottom: 2.5rem;
+        letter-spacing: normal;
+    }
+    a {
+        padding: 0.9rem 2.8rem;
+        border: 2px solid $white-color;
+        border-radius: 3rem;
+        text-decoration: none;
+        font-size: 1.4rem;
+        line-height: 1.1;
+        color: $white-color;
+        &:hover {
+            color: $accent;
+            background-color: $white-color;
+        }
+    }
+    img {
+        @include responsive(phone) {
+            width: 40%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+    }
+}

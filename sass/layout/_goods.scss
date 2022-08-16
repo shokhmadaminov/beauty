@@ -14,6 +14,12 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 3rem;
+        @include responsive(big-table){
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        @include responsive(table){
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        }
     }
     &__item {
         padding: 2.5rem 3rem;
