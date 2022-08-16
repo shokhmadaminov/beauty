@@ -30,3 +30,48 @@
         }
     }
 }
+
+.header-bottom {
+    border-top: 1px solid $gray-color;
+    padding: 3rem 1rem;
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        @include responsive(table) {
+            justify-content: space-between;
+            width: 100%;
+        }
+        @include responsive(phone) {
+            flex-wrap: wrap;
+        }
+    }
+    &__nav-item:not(:last-child) {
+        margin-right: 4rem;
+        @include responsive(table) {
+            margin-right: 0;
+        }
+    }
+    &__nav-item {
+        @include responsive(phone) {
+            padding: 1rem 2rem;
+        }
+        @include responsive(m-phone) {
+            padding: 1rem 1rem;
+        }
+    }
+    &__nav-link {
+        text-decoration: none;
+        color: $black-color;
+        font-size: 1.6rem;
+        line-height: 1.17;
+        &:hover {
+            color: $accent;
+        }
+    }
+}

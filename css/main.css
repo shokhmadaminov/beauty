@@ -95,6 +95,59 @@ h1 {
   color: #f13c6e;
 }
 
+.header-bottom {
+  border-top: 1px solid #efefef;
+  padding: 3rem 1rem;
+}
+.header-bottom__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-bottom__nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .header-bottom__nav-list {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header-bottom__nav-list {
+    flex-wrap: wrap;
+  }
+}
+.header-bottom__nav-item:not(:last-child) {
+  margin-right: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .header-bottom__nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header-bottom__nav-item {
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .header-bottom__nav-item {
+    padding: 1rem 1rem;
+  }
+}
+.header-bottom__nav-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 1.17;
+}
+.header-bottom__nav-link:hover {
+  color: #f13c6e;
+}
+
 .header-top {
   padding: 1.7rem 0;
   background-color: #efefef;
