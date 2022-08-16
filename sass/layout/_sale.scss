@@ -5,19 +5,8 @@
     url("../images/png/ellips-bg-two.png"),
     url("../images/png/ellips-bg-one.png");
     background-position: calc(50% + 200px);
-    // background-size: 859px 859px, 677px 677px;
     background-repeat: no-repeat;
-    @include responsive(phone) {
-        background-image:
-        url("../images/png/ellips-bg-two.png"),
-        url("../images/png/ellips-bg-one.png");
-        padding: 15rem 0px;
-        background-size: 80%, 100%;
-    }
-    @include responsive(m-phone) {
-        padding: 13rem 0px;
-        background-size: 100%, 120%;
-    }
+    margin-bottom: 8rem;
     &__container {
         @include container;
         display: flex;
@@ -51,5 +40,16 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
+    @include responsive(phone) {
+        background-image:
+        url("../images/png/ellips-bg-two.png"),
+        url("../images/png/ellips-bg-one.png");
+        padding: 15rem 0px;
+        background-size: 80%, 100%;
+    }
+    @include responsive(m-phone) {
+        padding: 13rem 0px;
+        background-size: 100%, 120%;
     }
 }

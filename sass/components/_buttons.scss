@@ -41,3 +41,20 @@
         color: $accent;
     }
 }
+
+
+.goods__btn {
+    padding: 0.7rem 3.8rem;
+    background-color: $accent;
+    border-radius: 3rem;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+    color: $white-color;
+    text-decoration: none;
+    border: $accent 2px solid;
+    &:hover {
+        background-color:$white-color;
+        color: $accent;
+    }
+}

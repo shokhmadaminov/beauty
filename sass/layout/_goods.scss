@@ -1,0 +1,41 @@
+.goods {
+    &__container {
+        @include container;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 1.1;
+        color: $black-color;
+        margin-bottom: 3.8rem;
+    }
+    &__grid {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+    }
+    &__item {
+        padding: 2.5rem 3rem;
+        background-color: $white-color;
+        text-align: center;
+    }
+    img {
+        width: 125px;
+        height: 166px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 2rem;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+    span {
+        display: block;
+        font-weight: 500;
+        font-size: 2.1rem;
+        line-height: 1.14;
+        letter-spacing: 0.05em;
+        margin-bottom: 2rem;
+    }
+}
