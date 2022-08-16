@@ -7,6 +7,7 @@
     font-size: 1.6rem;
     line-height: 1.15;
     padding: 1.2rem 2.6rem;
+    display: inline-block;
     @include responsive(m-phone) {
         padding: 1rem 1.8rem;
     }
@@ -25,5 +26,18 @@
     }
     @include responsive(m-phone) {
         margin-top: 2rem;
+    }
+}
+
+.sale__btn {
+    @extend %Buttons;
+    border-color: $white-color;
+    font-size: 1.4rem;
+    line-height: 1.1;
+    color: $white-color;
+    letter-spacing: 0.05em;
+    &:hover {
+        background-color: $white-color;
+        color: $accent;
     }
 }

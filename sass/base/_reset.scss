@@ -27,3 +27,7 @@ body {
     color: $dark-color;
     background-color: $white-color;
 }
+
+.main {
+    flex-grow: 1;
+}

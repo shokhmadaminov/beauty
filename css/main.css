@@ -33,6 +33,10 @@ body {
   background-color: #fff;
 }
 
+.main {
+  flex-grow: 1;
+}
+
 /* roboto-regular - latin */
 @font-face {
   font-family: "Roboto";
@@ -275,7 +279,73 @@ h1 {
   }
 }
 
-.header-main__btn {
+.sale {
+  padding: 19.2rem 0px;
+  background-color: #f13c6e;
+  background-image: url("../images/png/super-kreslo.png"), url("../images/png/ellips-bg-two.png"), url("../images/png/ellips-bg-one.png");
+  background-position: calc(50% + 200px);
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 576px) {
+  .sale {
+    background-image: url("../images/png/ellips-bg-two.png"), url("../images/png/ellips-bg-one.png");
+    padding: 15rem 0px;
+    background-size: 80%, 100%;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .sale {
+    padding: 13rem 0px;
+    background-size: 100%, 120%;
+  }
+}
+.sale__container {
+  width: 100%;
+  max-width: 1110px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .sale__container {
+    justify-content: center;
+  }
+}
+.sale__text-wrapper {
+  width: 100%;
+  max-width: 325px;
+  text-shadow: 0px 0px 10px #f13c6e;
+}
+@media only screen and (max-width: 410px) {
+  .sale__text-wrapper {
+    text-align: center;
+  }
+}
+.sale__title {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 1.16;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 5rem;
+}
+.sale__text {
+  width: 100%;
+  max-width: 308px;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 410px) {
+  .sale__text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sale__btn, .header-main__btn {
   text-decoration: none;
   background-color: transparent;
   border: 2px solid #f13c6e;
@@ -284,9 +354,10 @@ h1 {
   font-size: 1.6rem;
   line-height: 1.15;
   padding: 1.2rem 2.6rem;
+  display: inline-block;
 }
 @media only screen and (max-width: 410px) {
-  .header-main__btn {
+  .sale__btn, .header-main__btn {
     padding: 1rem 1.8rem;
   }
 }
@@ -307,4 +378,16 @@ h1 {
   .header-main__btn {
     margin-top: 2rem;
   }
+}
+
+.sale__btn {
+  border-color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.1;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+.sale__btn:hover {
+  background-color: #fff;
+  color: #f13c6e;
 }/*# sourceMappingURL=main.css.map */

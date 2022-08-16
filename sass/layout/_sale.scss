@@ -1,0 +1,55 @@
+.sale {
+    padding: 19.2rem 0px;
+    background-color: $accent;
+    background-image: url("../images/png/super-kreslo.png"),
+    url("../images/png/ellips-bg-two.png"),
+    url("../images/png/ellips-bg-one.png");
+    background-position: calc(50% + 200px);
+    // background-size: 859px 859px, 677px 677px;
+    background-repeat: no-repeat;
+    @include responsive(phone) {
+        background-image:
+        url("../images/png/ellips-bg-two.png"),
+        url("../images/png/ellips-bg-one.png");
+        padding: 15rem 0px;
+        background-size: 80%, 100%;
+    }
+    @include responsive(m-phone) {
+        padding: 13rem 0px;
+        background-size: 100%, 120%;
+    }
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        @include responsive(phone) {
+            justify-content: center;
+        }
+    }
+    &__text-wrapper {
+        width: 100%;
+        max-width: 325px;
+        text-shadow: 0px 0px 10px $accent;
+        @include responsive(m-phone) {
+            text-align: center;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 1.16;
+        color: $white-color;
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+    &__text {
+        width: 100%;
+        max-width: 308px;
+        color: $white-color;
+        margin-bottom: 5rem;
+        @include responsive(m-phone) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
