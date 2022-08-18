@@ -5,6 +5,9 @@
     padding-right: 2rem;
     margin-left: auto;
     margin-right: auto;
+    @include responsive(phone) {
+        padding: 0rem 1rem;
+    }
 }
 
 

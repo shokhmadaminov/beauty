@@ -1,4 +1,7 @@
 .goods {
+    &:last-child {
+        margin-bottom: 8rem;
+    }
     &__container {
         @include container;
     }

@@ -1,6 +1,9 @@
 .subscribe {
     @include container;
     margin: 10rem auto;
+    @include responsive(phone) {
+        margin: 5rem auto;
+    }
     ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));

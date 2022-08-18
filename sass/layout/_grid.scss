@@ -1,0 +1,40 @@
+.partners {
+    margin-bottom: 8rem;
+    @include responsive(phone) {
+        margin-bottom: 5rem;
+    }
+    &__container {
+        @include container;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1px;
+        @include responsive(phone) {
+            grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+        }
+        @include responsive(m-phone) {
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        }
+    }
+    li {
+        background-color: $white-color;
+    }
+    a {
+        width: 100%;
+        padding: 3.5rem 0px;
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        width: 149px;
+        height: 49px;
+        object-fit: contain;
+        object-position: center;
+        @include responsive(phone) {
+            width: 60%;
+            height: auto;
+        }
+    }
+}

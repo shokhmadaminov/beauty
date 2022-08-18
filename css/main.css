@@ -153,6 +153,65 @@ h1 {
   color: #f13c6e;
 }
 
+.partners {
+  margin-bottom: 8rem;
+}
+@media only screen and (max-width: 576px) {
+  .partners {
+    margin-bottom: 5rem;
+  }
+}
+.partners__container {
+  width: 100%;
+  max-width: 1110px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 576px) {
+  .partners__container {
+    padding: 0rem 1rem;
+  }
+}
+.partners ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1px;
+}
+@media only screen and (max-width: 576px) {
+  .partners ul {
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  }
+}
+@media only screen and (max-width: 410px) {
+  .partners ul {
+    grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  }
+}
+.partners li {
+  background-color: #fff;
+}
+.partners a {
+  width: 100%;
+  padding: 3.5rem 0px;
+  display: flex;
+  justify-content: center;
+}
+.partners img {
+  width: 149px;
+  height: 49px;
+  object-fit: contain;
+  object-position: center;
+}
+@media only screen and (max-width: 576px) {
+  .partners img {
+    width: 60%;
+    height: auto;
+  }
+}
+
 .header-top {
   padding: 1.7rem 0;
   background-color: #efefef;
@@ -177,6 +236,11 @@ h1 {
   margin-right: auto;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .header-main__container {
+    padding: 0rem 1rem;
+  }
 }
 @media only screen and (max-width: 840px) {
   .header-main__container {
@@ -317,6 +381,11 @@ h1 {
 }
 @media only screen and (max-width: 576px) {
   .sale__container {
+    padding: 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sale__container {
     justify-content: center;
   }
 }
@@ -364,6 +433,9 @@ h1 {
   }
 }
 
+.goods:last-child {
+  margin-bottom: 8rem;
+}
 .goods__container {
   width: 100%;
   max-width: 1110px;
@@ -371,6 +443,11 @@ h1 {
   padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 576px) {
+  .goods__container {
+    padding: 0rem 1rem;
+  }
 }
 .goods__title {
   font-weight: 700;
@@ -427,6 +504,16 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   margin: 10rem auto;
+}
+@media only screen and (max-width: 576px) {
+  .subscribe {
+    padding: 0rem 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .subscribe {
+    margin: 5rem auto;
+  }
 }
 .subscribe ul {
   display: grid;
