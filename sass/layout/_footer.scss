@@ -1,0 +1,179 @@
+.footer {
+    background-color: $white-color;
+    &__hr {
+        width: 100%;
+        border: none;
+        background-color: $gray-color;
+        height: 1px;
+    }
+}
+.footer-top {
+    padding: 6rem 0px;
+    &__container {
+        @include container;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 3rem;
+        list-style: none;
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+        @include responsive(phone) {
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        }
+        @include responsive(m-phone) {
+            padding-left: 3rem;
+        }
+    }
+    h2 {
+        width: 100%;
+        max-width: 100px;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.37;
+        color: $black-color;
+        margin-bottom: 3rem;
+    }
+    hr {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: $gray-color;
+        margin-bottom: 2.5rem;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        line-height: 2.33;
+        color: $footer-text-color;
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.footer-middle {
+    padding: 3.7rem 0;
+    &__container {
+        display: flex;
+        align-items: center;
+        @include container;
+        @include responsive(big-table) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include responsive(m-phone) {
+            flex-direction: column;
+        }
+    }
+    &__social-media {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        @include responsive(m-phone) {
+            margin-right: 0;
+        }
+        a {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid $accent;
+            border-radius: 50%;
+            outline: none;
+            &:hover img {
+                animation: social-animation 1s ease;
+            }
+            @include responsive(middle-table) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    li:not(:last-child) {
+        margin-right: 2rem;
+    }
+    img {
+        object-fit: contain;
+        object-position: center;
+    }
+    &__location {
+        font-size: 1.4rem;
+        line-height: 1.1;
+        color: $black-color;
+        margin-right: 10.5rem;
+        @include responsive(big-table) {
+            width: 60%;
+            margin-right: 0;
+            text-align: right;
+        }
+        @include responsive(table) {
+            width: 40%;
+            margin-right: 0;
+            text-align: right;
+
+        }
+        @include responsive(phone) {
+            width: max-content;
+            margin-right: 0;
+            text-align: right;
+            margin-bottom: 2rem;
+        }
+    }
+    .header-main__tel {
+        @include responsive(phone) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+.footer-bottom {
+    background-color: $gray-color;
+    padding: 2.5rem 0;
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        line-height: 1.1;
+        @include responsive(middle-table) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    div:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
+
+@keyframes social-animation {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scale(0.5);
+    }
+    20% {
+        transform: scale(1.2);
+    }
+    30% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

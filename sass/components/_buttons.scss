@@ -58,3 +58,19 @@
         color: $accent;
     }
 }
+
+
+.footer-middle__btn {
+    @extend %Buttons;
+    color: $black-color;
+    &:hover {
+        background-color: $accent;
+        color: $white-color;
+    }
+    @include responsive(phone) {
+        order: 2;
+    }
+    @include responsive(m-phone) {
+        margin-top: 2rem;
+    }
+}
